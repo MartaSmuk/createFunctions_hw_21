@@ -16,7 +16,8 @@ function powerFun(basis, exponent) {
     }
     
 }
-console.log(powerFun(2, -3));
+let powerResult = powerFun(2, -3);
+document.write(`1. Рекурсивне зведення в ступінь: ${powerResult} <br>`);
 
 //  Завдання 2. Реалізуйте функцію removeElement
 //  Реалізуйте функцію removeElement(array, item), щоб видалити елемент item з масиву array.
@@ -30,7 +31,9 @@ function removeElement(array, el) {
     return array;
 }
 
-console.log(removeElement(array, 2));
+let resArray = removeElement(array, 2);
+
+document.write(`2. Реалізуйте функцію removeElement: ${resArray} <br>`);
 
 // Завдання 3. Реалізуйте функцію generateKey
 
@@ -45,5 +48,7 @@ function generateKey(length, characters) {
     return res;
 }
 
-console.log(generateKey(15, 'abcdefghijklmnopqrstuvwxyz0123456789'));
+let resGenChar = generateKey(15, 'abcdefghijklmnopqrstuvwxyz0123456789');
+
+document.write(`3. Реалізуйте функцію generateKey(length, characters): ${resGenChar} <br>`);
 
