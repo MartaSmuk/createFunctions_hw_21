@@ -39,6 +39,10 @@ document.write(`2. Реалізуйте функцію removeElement: ${resArray
 
 // Реалізуйте функцію generateKey(length, characters), яка повертає рядок випадкових символів із набору characters довжиною length. span>
 
+const length = 13;
+const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+
+
 function generateKey(length, characters) {
     let res = "";
     for (let i = 0; i <= length; i++) {
@@ -48,7 +52,7 @@ function generateKey(length, characters) {
     return res;
 }
 
-let resGenChar = generateKey(15, 'abcdefghijklmnopqrstuvwxyz0123456789');
+let resGenChar = generateKey(length, 'characters');
 
 document.write(`3. Реалізуйте функцію generateKey(length, characters): ${resGenChar} <br>`);
 
